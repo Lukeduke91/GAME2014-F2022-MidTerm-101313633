@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/// <summary>
-/// 1:17
-/// </summary>
+
+///  PlayerBehaviour.cs
+///  Lucas Gurney
+///  101313633
+///  October 21 2022 1:17 PM
+///  Lets the player around within the boundaries that were set, while also making the player shoot constantly.
+///  Changed the players movement from moving left and right, to moving up and down
+
 public class PlayerBehaviour : MonoBehaviour
 {
     [Header("Player Properties")]

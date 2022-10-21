@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/// <summary>
-/// 1:17
-/// </summary>
+
+///  BackgroundStarBehaviour.cs
+///  Lucas Gurney
+///  101313633
+///  October 21 2022 1:17 PM
+///  Makes the background loop endlessly
+///  Changed the background to loop to the left
+
 public class BackgroundStarsBehaviour : MonoBehaviour
 {
     public float verticalSpeed;

@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/// <summary>
-/// 
-/// 1:17 PM
-/// 
-/// </summary>
+
+///  BulletFactory.cs
+///  Lucas Gurney
+///  101313633
+///  October 21 2022 1:17 PM
+///  Generates bullets for both the enemy and the player, and sets the directions of the bullets
+///  Changed the player and enemies bullet directions
+
 [System.Serializable]
 public class BulletFactory : MonoBehaviour
 {

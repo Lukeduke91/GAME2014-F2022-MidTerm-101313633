@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/// <summary>
-/// 5:08 PM
-/// </summary>
+using static Unity.VisualScripting.Member;
+
+///  EnemyBehaviour.cs, 
+///  Lucas Gurney, 
+///  101313633
+///  October 21 2022 5:08 PM, 
+///  Makes the enemy in a ping pong pattern and slowly creeps towards the player while shooting him 
+///  Made it change from going down and bouncing left and right now going left and bouncing up and down towards the player.
 public class EnemyBehaviour : MonoBehaviour
 {
     public Boundary horizontalBoundary;
