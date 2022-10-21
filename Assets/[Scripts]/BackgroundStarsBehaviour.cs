@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// 
+/// 1:17
 /// </summary>
 public class BackgroundStarsBehaviour : MonoBehaviour
 {

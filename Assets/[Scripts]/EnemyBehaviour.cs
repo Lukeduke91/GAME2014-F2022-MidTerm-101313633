@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// 5:08 PM
+/// </summary>
 public class EnemyBehaviour : MonoBehaviour
 {
     public Boundary horizontalBoundary;
@@ -37,14 +39,16 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Move()
     {
-        var horizontalLength = horizontalBoundary.max - horizontalBoundary.min;
-        transform.position = new Vector3(Mathf.PingPong(Time.time * horizontalSpeed, horizontalLength) - horizontalBoundary.max,
-            transform.position.y - verticalSpeed * Time.deltaTime, transform.position.z);
+        var verticalLength = verticalBoundary.max - verticalBoundary.min;
+        //transform.position = new Vector3(Mathf.PingPong(Time.time * horizontalSpeed, verticalLength) - horizontalBoundary.max,
+        //    transform.position.y - verticalSpeed * Time.deltaTime, transform.position.z);
+        transform.position = new Vector3(transform.position.x - horizontalSpeed * Time.deltaTime,
+            Mathf.PingPong(Time.time * verticalSpeed, verticalLength) - verticalBoundary.max, transform.position.z);
     }
 
     public void CheckBounds()
     {
-        if (transform.position.y < screenBounds.min)
+        if (transform.position.x < screenBounds.min)
         {
             ResetEnemy();
         }
